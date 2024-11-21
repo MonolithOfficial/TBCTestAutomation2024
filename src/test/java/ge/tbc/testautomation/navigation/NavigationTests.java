@@ -45,6 +45,13 @@ public class NavigationTests {
             x++;
         }
 
+        driver.switchTo().defaultContent();
+
+        WebElement mobileLink = driver.findElement(By.xpath("//li[@class='project jquery-mobile']"));
+        mobileLink.click();
+        System.out.println(sliderFrame.getText());
+
+
 
     }
 
